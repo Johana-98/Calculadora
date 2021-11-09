@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="./estilos.css" rel="stylesheet">
+	<title>Calculadora</title>
+</head>
+
+<body>
+	<div class="calculator-grid">
+		<div class="output">
+			<div data-previous-operand class="previous-operand"></div>
+			<div data-current-operand class="current-operand"></div>
+		</div>
+		<button data-all-clear class="span-two">AC</button>
+		<button data-delete>DEL</button>
+		<button data-operation>÷</button>
+		<button data-number>1</button>
+		<button data-number>2</button>
+		<button data-number>3</button>
+		<button data-operation>*</button>
+		<button data-number>4</button>
+		<button data-number>5</button>
+		<button data-number>6</button>
+		<button data-operation>+</button>
+		<button data-number>7</button>
+		<button data-number>8</button>
+		<button data-number>9</button>
+		<button data-operation>-</button>
+		<button data-number>.</button>
+		<button data-number>0</button>
+		<button data-equals class="span-two">=</button>
+	</div>
+
+	<!-- Super basic calculator -->
+
+
+	<div class="container">
+		<h2>calculadora</h2>
+		<div>
+			<input type="number" size="55" id="id1" />
+			<!-- <input type="text" id="id2" /> -->
+			<select name="select" id="id2">
+				<option value="suma" id="suma">+</option>
+				<option value="resta" id="resta">-</option>
+				<option value="multiplicacion" id="multi">x</option>
+				<option value="division" id="div">÷</option>
+			</select>
+			<input type="number" size="55" id="id3" />
+			<button id="id4">Calcular</button>
+		</div>
+
+		<h2>¡TU RESULTADO ES...</h1>
+		<h1 id="id5">0!</h1>
+
+		<!-- <p><input type="reset" value="borrar" /></p> -->
+	</div>
+
+	<script src="./app.js" defer></script>
+</body>
+
+</html>
